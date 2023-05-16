@@ -14,7 +14,7 @@
 
 # Motion Canvas Exporters
 
-The official exporters for [Motion Canvas](https://motion-canvas.io).
+An unofficial edit of the exporters for [Motion Canvas](https://motion-canvas.io) so they support transparency.
 
 ## Installation
 
