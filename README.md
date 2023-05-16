@@ -18,24 +18,33 @@ An unofficial edit of the exporters for [Motion Canvas](https://motion-canvas.io
 
 ## Installation
 
+1. Download the repo
+1. Download the dependencies 
+   ```sh
+   npm run install
+   ```
+1. Build it with 
+   ```sh
+   npm run ffmpeg:build
+   ```
 1. In an existing Motion Canvas project, install the exporter package:
    ```sh
-   npm install @motion-canvas/ffmpeg
+   npm install --save ../path/to/build/folder
    ```
-2. Add the exporter as a plugin in your `vite.config.ts`:
+1. Add the exporter as a plugin in your `vite.config.ts`:
 
    ```diff
      import {defineConfig} from 'vite';
      import motionCanvas from '@motion-canvas/vite-plugin';
-   + import ffmpeg from '@motion-canvas/ffmpeg';
+   + import ffmpeg-transparency from '@motion-canvas/ffmpeg-edited-transparency';
 
      export default defineConfig({
        plugins: [
          motionCanvas(),
-   +     ffmpeg(),
+   +     ffmpeg-transparency(),
        ],
      });
    ```
 
-3. Pick the exporter in the Video Settings tab:
+5. Pick the exporter in the Video Settings tab:
    ![Video Settings](./images/video-settings-tab.png)

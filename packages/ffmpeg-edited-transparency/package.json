@@ -1,10 +1,10 @@
 {
-  "name": "@motion-canvas/ffmpeg",
+  "name": "@motion-canvas/ffmpeg-edited-transparency",
   "version": "1.1.1",
   "private":true,
-  "description": "An FFmpeg video exporter for Motion Canvas",
+  "description": "An edited version of the FFmpeg video exporter for Motion Canvas so it supports transparency",
   "main": "lib/server/index.js",
-  "author": "motion-canvas",
+  "author": "motion-canvas, S1rDev10us",
   "homepage": "https://motioncanvas.io/",
   "bugs": "https://github.com/motion-canvas/exporters/issues",
   "license": "MIT",

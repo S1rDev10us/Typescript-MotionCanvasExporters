@@ -44,8 +44,8 @@ type FFmpegExporterOptions = ValueOf<
  * initialized by invoking `start`.
  */
 export class FFmpegExporterClient implements Exporter {
-  public static readonly id = '@motion-canvas/ffmpeg';
-  public static readonly displayName = 'Video (FFmpeg)';
+  public static readonly id = '@motion-canvas/ffmpeg-edited-transparency';
+  public static readonly displayName = 'Video With Transparency (FFmpeg)';
 
   public static meta(project: Project): MetaField<any> {
     return new ObjectMetaField(this.displayName, {
@@ -65,7 +65,7 @@ export class FFmpegExporterClient implements Exporter {
   static {
     if (import.meta.hot) {
       import.meta.hot.on(
-        `motion-canvas/ffmpeg-ack`,
+        `motion-canvas/ffmpeg-ack-edited-transparency`,
         (response: ServerResponse) => this.response.dispatch(response),
       );
     }
@@ -127,7 +127,7 @@ export class FFmpegExporterClient implements Exporter {
           }
         };
         FFmpegExporterClient.response.subscribe(handle);
-        import.meta.hot!.send('motion-canvas/ffmpeg', {method, data});
+        import.meta.hot!.send('motion-canvas/ffmpeg-edited-transparency', {method, data});
       });
     } else {
       throw new Error('FFmpegExporter can only be used locally.');
