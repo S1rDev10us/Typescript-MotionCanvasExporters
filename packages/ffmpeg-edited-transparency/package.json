@@ -1,6 +1,6 @@
 {
   "name": "@motion-canvas/ffmpeg-edited-transparency",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private":true,
   "description": "An edited version of the FFmpeg video exporter for Motion Canvas so it supports transparency",
   "main": "lib/server/index.js",

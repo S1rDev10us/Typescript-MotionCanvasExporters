@@ -3,7 +3,7 @@ import type {ExporterClass} from '@motion-canvas/core/lib/app';
 import {FFmpegExporterClient} from './FFmpegExporterClient';
 
 export default makePlugin({
-  name: 'ffmpeg-plugin',
+  name: 'ffmpeg-edited-transparency-plugin',
   exporters(): ExporterClass[] {
     return [FFmpegExporterClient];
   },

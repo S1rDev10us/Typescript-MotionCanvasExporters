@@ -8,9 +8,9 @@ import {FFmpegBridge} from './FFmpegBridge';
 export default (): Plugin => {
   let config: PluginConfig;
   return {
-    name: 'motion-canvas/ffmpeg',
+    name: 'motion-canvas/ffmpeg-edited-transparency',
     [PLUGIN_OPTIONS]: {
-      entryPoint: '@motion-canvas/ffmpeg/lib/client',
+      entryPoint: '@motion-canvas/ffmpeg-edited-transparency/lib/client',
       async config(value) {
         config = value;
       },

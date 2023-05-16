@@ -7,9 +7,9 @@
   "scripts": {
     "prepare": "husky install",
     "template:serve": "npm run serve -w packages/template",
-    "ffmpeg:build": "npm run build -w packages/ffmpeg",
-    "ffmpeg:client:dev": "npm run client:dev -w packages/ffmpeg",
-    "ffmpeg:server:dev": "npm run server:dev -w packages/ffmpeg",
+    "ffmpeg-edited-transparency:build": "npm run build -w packages/ffmpeg-edited-transparency",
+    "ffmpeg-edited-transparency:client:dev": "npm run client:dev -w packages/ffmpeg-edited-transparency",
+    "ffmpeg-edited-transparency:server:dev": "npm run server:dev -w packages/ffmpeg-edited-transparency",
     "eslint": "eslint \"**/*.ts?(x)\"",
     "eslint:fix": "eslint --fix \"**/*.ts?(x)\"",
     "prettier": "prettier --check .",
