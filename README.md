@@ -1,3 +1,8 @@
+# DISCLAIMER: I DO NOT OWN [MOTION CANVAS](https://github.com/motion-canvas) THIS IS A USER MADE TOOL FOR MOTION CANVAS
+
+
+
+
 <br/>
 <p align="center">
   <a href="https://motion-canvas.github.io">
