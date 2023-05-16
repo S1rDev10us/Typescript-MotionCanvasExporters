@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0]
+An unofficial update to this plugin to make the exported file a transparent webm
+
 ## [1.1.1](https://github.com/motion-canvas/exporters/compare/v1.1.0...v1.1.1) (2023-05-13)
 
 ### Bug Fixes

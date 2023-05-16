@@ -14,7 +14,7 @@
 
 # Motion Canvas Exporters
 
-An unofficial edit of the exporters for [Motion Canvas](https://motion-canvas.io) so they support transparency.
+An unofficial edit of the exporters for [Motion Canvas](https://motion-canvas.io) so it supports transparency.
 
 ## Installation
 
@@ -46,5 +46,5 @@ An unofficial edit of the exporters for [Motion Canvas](https://motion-canvas.io
      });
    ```
 
-5. Pick the exporter in the Video Settings tab:
+5. Pick the exporter in the Video Settings tab: (pick the video with transparency option)
    ![Video Settings](./images/video-settings-tab.png)
