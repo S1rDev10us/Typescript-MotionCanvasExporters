@@ -1,6 +1,6 @@
 {
   "name": "@motion-canvas/ffmpeg-edited-transparency",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private":true,
   "description": "An edited version of the FFmpeg video exporter for Motion Canvas so it supports transparency",
   "main": "lib/server/index.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/motion-canvas/exporters.git"
+    "url": "git+https://github.com/S1rDev10us/Typescript-MotionCanvasExporters.git"
   },
   "files": [
     "lib"
   ],
   "peerDependencies": {
-    "@motion-canvas/core": "^3.7.0",
+    "@motion-canvas/core": "^3.8.0",
     "@motion-canvas/vite-plugin": "^3.7.0",
     "vite": "4.x"
   },

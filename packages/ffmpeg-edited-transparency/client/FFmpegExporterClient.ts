@@ -60,12 +60,12 @@ export class FFmpegExporterClient implements Exporter {
 				{ value: "mov", text: "mov" },
 				{ value: "mp4", text: "mp4" },
 			], "webm"),
-			pixelFormat: new EnumMetaField("file type", [
+			pixelFormat: new EnumMetaField("colour format", [
 				{ value: "rgba", text: "rgba" },
 				{ value: "yuv420p", text: "yuv420p" },
 				{ value: "yuva420p", text: "yuva420p" },
 				{ value: "yuv411p", text: "yuv411p" }
-			],"rgba"),
+			], "rgba"),
 		});
 	}
 
