@@ -13,13 +13,16 @@ import * as path from 'path';
 ffmpeg.setFfmpegPath(ffmpegPath);
 ffmpeg.setFfprobePath(ffprobePath);
 
+const fileEncodings= <const>["webm", "mov", "mp4"] ;
+const pixelFormats= <const>["rgba", "yuv420p", "yuva420p", "yuv411p"];
+
 export interface FFmpegExporterSettings extends RendererSettings {
 	audio?: string;
 	audioOffset?: number;
 	fastStart: boolean;
 	includeAudio: boolean;
-	fileType: "webm" | "mov" | "mp4";
-	pixelFormat: "rgba" | "yuv420p" | "yuva420p" | "yuv411p";
+	fileType: typeof fileEncodings[number];
+	pixelFormat: typeof pixelFormats[number];
 }
 
 /**
@@ -57,8 +60,8 @@ export class FFmpegExporterServer {
 			y: Math.round(settings.size.y * settings.resolutionScale),
 		};
 		this.command
-			.output(path.join(this.config.output, `${settings.name}.${settings.fileType}`))
-			.outputOptions([`-pix_fmt ${settings.pixelFormat}`, '-shortest'])
+			.output(path.join(this.config.output, `${settings.name}.${fileEncodings.find((v)=>v==settings.fileType)??fileEncodings[0]}`))
+			.outputOptions([`-pix_fmt ${pixelFormats.find((v)=>v==settings.pixelFormat)??pixelFormats[0]}`, '-shortest'])
 			.outputFps(settings.fps)
 			.size(`${size.x}x${size.y}`);
 		if (settings.fastStart) {
