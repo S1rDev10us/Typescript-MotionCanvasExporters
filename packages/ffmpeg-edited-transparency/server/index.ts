@@ -4,8 +4,9 @@ import {
   PluginConfig,
 } from '@motion-canvas/vite-plugin/lib/plugins';
 import {FFmpegBridge} from './FFmpegBridge';
+import {PluginOption} from 'vite';
 
-export default (): Plugin => {
+export default (): PluginOption & Plugin => {
   let config: PluginConfig;
   return {
     name: 'motion-canvas/ffmpeg-edited-transparency',
